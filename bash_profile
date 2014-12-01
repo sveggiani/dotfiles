@@ -12,7 +12,7 @@ export PATH="/usr/local/heroku/bin:$PATH"
 
 
 ### Add custom scripts to PATH (sveggiani, 20141108)
-export PATH="$PATH:~/dotfiles/scripts/"
+export PATH="$PATH:$HOME/dotfiles/scripts/"
 
 ### Added Composer bin to PATH (sveggiani, 20141102)
-export PATH="$PATH:~/.composer/vendor/bin"
+export PATH="$PATH:$HOME/.composer/vendor/bin"
