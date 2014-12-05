@@ -8,7 +8,7 @@ export LANG=en_US.UTF-8
 alias gl="git log --oneline --all --graph --decorate  $*"
 
 ### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
+export PATH="$PATH:/usr/local/heroku/bin"
 
 
 ### Add custom scripts to PATH (sveggiani, 20141108)
