@@ -145,3 +145,6 @@ set PATH $PATH $HOME/dotfiles/scripts/
 
 ### Added Composer bin to PATH (sveggiani, 20141102)
 set PATH $PATH $HOME/.composer/vendor/bin
+
+### Export github tokens (for homebrew for example) (sveggiani, 20150902)
+. $HOME/github_tokens
