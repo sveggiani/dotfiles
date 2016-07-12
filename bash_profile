@@ -16,3 +16,6 @@ export PATH="$PATH:$HOME/dotfiles/scripts"
 
 ### Added Composer bin to PATH (sveggiani, 20141102)
 export PATH="$PATH:$HOME/.composer/vendor/bin"
+
+### iTerm2 shell integration
+test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
