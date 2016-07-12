@@ -2,7 +2,7 @@
 set fish_path $HOME/.oh-my-fish
 
 # Theme
-set fish_theme l
+set fish_theme clearance
 
 # All built-in plugins can be found at ~/.oh-my-fish/plugins/
 # Custom plugins may be added to ~/.oh-my-fish/custom/plugins/
@@ -26,6 +26,14 @@ set LANG en_US.UTF-8
 # Aliases / functions
 function cdw
     cd /Volumes/Garden/Work
+end
+
+function c
+    clear
+end
+
+function h
+    cd ~/
 end
 
 function l
@@ -134,6 +142,10 @@ end
 
 function gstd
     git stash drop $argv
+end
+
+function art
+    php artisan
 end
 
 
