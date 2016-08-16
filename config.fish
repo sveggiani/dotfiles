@@ -2,7 +2,7 @@
 set fish_path $HOME/.oh-my-fish
 
 # Theme
-set fish_theme clearance
+set fish_theme l
 
 # All built-in plugins can be found at ~/.oh-my-fish/plugins/
 # Custom plugins may be added to ~/.oh-my-fish/custom/plugins/
@@ -37,19 +37,19 @@ function h
 end
 
 function l
-    ls -lah
+    ls -lah $argv
 end
 
 function la
-    ls -lAh
+    ls -lAh $argv
 end
 
 function ll
-    ls -lh
+    ls -lh $argv
 end
 
 function lsa
-    ls -lah
+    ls -lah $argv
 end
 
 function ga
@@ -149,14 +149,9 @@ function art
 end
 
 
-### Added by the Heroku Toolbelt
-set PATH $PATH /usr/local/heroku/bin
 
 ### Add custom scripts to PATH (sveggiani, 20141108)
 set PATH $PATH $HOME/dotfiles/scripts
-
-### Added Composer bin to PATH (sveggiani, 20141102)
-set PATH $PATH $HOME/.composer/vendor/bin
 
 ### Export github tokens (for homebrew for example) (sveggiani, 20160220)
 . $HOME/github_tokens
