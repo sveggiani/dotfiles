@@ -36,6 +36,10 @@ function h
     cd ~/
 end
 
+function reset-network
+    sudo ifconfig en0 down; sudo ifconfig en0 up
+end
+
 function l
     ls -lah $argv
 end
