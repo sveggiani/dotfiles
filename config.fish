@@ -2,7 +2,7 @@
 set fish_path $HOME/.oh-my-fish
 
 # Theme
-set fish_theme l
+set fish_theme bobthefish
 
 # All built-in plugins can be found at ~/.oh-my-fish/plugins/
 # Custom plugins may be added to ~/.oh-my-fish/custom/plugins/
@@ -152,6 +152,9 @@ function art
     php artisan
 end
 
+function chrome-no-security
+	open -n -a /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --args --disable-web-security --user-data-dir=/Users/sebastian/.chrome-insecure --new-window
+end
 
 
 ### Add custom scripts to PATH (sveggiani, 20141108)
@@ -159,3 +162,14 @@ set PATH $PATH $HOME/dotfiles/scripts
 
 ### Export github tokens (for homebrew for example) (sveggiani, 20160220)
 . $HOME/github_tokens
+
+### Add Homebrew /usr/local/sbin (sveggiani, 20161119)
+set PATH $PATH /usr/local/sbin
+
+### Add Yarn global variable (sveggiani, 20161204)
+set PATH $PATH `yarn global bin`
+
+# Android SDK
+set ANDROID_HOME $HOME/Library/Android/sdk
+set PATH $PATH $ANDROID_HOME/tools
+set PATH $PATH $ANDROID_HOME/platform-tools
