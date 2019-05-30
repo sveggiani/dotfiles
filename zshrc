@@ -5,7 +5,16 @@ export ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="ys"
+
+#ZSH_THEME="ys"
+#ZSH_THEME="agnoster"
+
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(time dir vcs)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator node_version background_jobs)
+POWERLEVEL9K_SHORTEN_STRATEGY="truncate_from_right"
+POWERLEVEL9K_SHORTEN_DIR_LENGTH=1
+POWERLEVEL9K_SHORTEN_DELIMITER=""
+ZSH_THEME="powerlevel9k/powerlevel9k"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -45,7 +54,7 @@ ZSH_THEME="ys"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git npm osx)
+plugins=(git npm osx zsh-nvm)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -89,31 +98,10 @@ export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
 # Aliases
-alias cdw="cd /Volumes/Garden/Work"
-alias ga="git add"
-alias gaa="git add ."
-alias gaaa="git add -A"
-alias gb="git branch"
-alias gbd="git branch -d"
-alias gc="git commit"
-alias gcm="git commit -m"
-alias gco="git checkout"
-alias gcob="git checkout -b"
-alias gcom="git checkout master"
-alias gd="git diff"
-alias gda="git diff HEAD"
-alias gi="git init"
-alias gl="git log"
-alias glg="git log --graph --oneline --decorate --all"
-alias gld="git log --pretty=format:"%h %ad %s" --date=short --all"
-alias gm="git merge --no-ff"
-alias gp="git pull"
-alias gs="git status"
-alias gss="git status -s"
-alias gst="git stash"
-alias gstl="git stash list"
-alias gstp="git stash pop"
-alias gstd="git stash drop"
+alias cdw="cd /Users/sebastian/Documents/Work/"
+alias t3="tree -v -L 3 -C --charset utf-8"
+alias tt="tree -v -C --charset utf-8"
+
 
 ### Added by the Heroku Toolbelt
 export PATH="$PATH:/usr/local/heroku/bin"
@@ -124,3 +112,7 @@ export PATH="$PATH:$HOME/dotfiles/scripts"
 
 ### Added Composer bin to PATH (sveggiani, 20141102)
 export PATH="$PATH:$HOME/.composer/vendor/bin"
+
+### NVM
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
