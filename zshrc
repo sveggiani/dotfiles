@@ -54,7 +54,7 @@ ZSH_THEME="powerlevel9k/powerlevel9k"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git npm osx zsh-nvm)
+plugins=(git npm osx zsh-nvm copydir)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -116,3 +116,7 @@ export PATH="$PATH:$HOME/.composer/vendor/bin"
 ### NVM
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+
+## php-info (manage PHP versions, added for Velir - RRH project)
+# source $(brew --prefix php-version)/php-version.sh
+# php-version 7.2

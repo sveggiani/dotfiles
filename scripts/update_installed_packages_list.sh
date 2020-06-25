@@ -11,4 +11,4 @@ export PATH=/usr/local/bin/node:$PATH
 
 # Notify execution
 osascript -e 'display notification "message" with title "Packages list updated" subtitle "npm and homebrew packages lists have been updated"'
-say -v Victoria "Packages list updated"
+### say -v Victoria "Packages list updated"
