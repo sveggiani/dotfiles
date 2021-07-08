@@ -102,7 +102,8 @@ export LANG=en_US.UTF-8
 alias cdw="cd /Users/sebastian/Documents/Work/"
 alias t3="tree -v -L 3 -C --charset utf-8"
 alias tt="tree -v -C --charset utf-8"
-
+alias gcob="git branch | fzf --height 33% --reverse --border | xargs git checkout"
+alias gcot="git branch --remote| fzf --height 33% --reverse --border | xargs git checkout -t"
 
 ### Added by the Heroku Toolbelt
 export PATH="$PATH:/usr/local/heroku/bin"
